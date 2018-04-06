@@ -383,6 +383,7 @@ head( alldata )
 write.csv( x = alldata, file = paste( workdir, "/data/alldata.csv", sep="" ), 
            row.names = FALSE )
 
+
 # Repeat the process for your background points
 bkgrddata <- as.data.frame( bkgrd.pnts@coords[,c("x", "y" ) ] )
 bkgrddata$id <- 1:M
